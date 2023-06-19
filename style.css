@@ -435,22 +435,48 @@ span{
     
 }
 
-@media(max-width:600px){
+@media(max-width:450px){
+  
+    header .container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+    .logo{
+        padding-left: 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 200px;
+        background: rgba(0,0,0, 0.8);
+        width: 100%;
+        margin-top: 50px;
+
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        justify-content: space-around;
+    }
+
     .banner_headline{
-        padding: 20px;
+        padding: 10px;
 
     }
     .banner_headline h1{
-        font-size: 55px;
+        font-size: 40px;
     }
     .banner_headline h2{
-        font-size: 17px;
+        font-size: 14px;
 
     }
     .banner_options{
         height: auto;
         flex-direction: column;
-        
     }
     .container{
         flex-direction: column;
@@ -463,6 +489,14 @@ span{
     #geral aside{
         padding: 50px;
     }
+    .aside{
+        display: flex;
+        width: 300px;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        background-color: white;
+    }
+
     .footer_area1,
     .footer_area2{
         flex-direction: column;
@@ -471,30 +505,5 @@ span{
     .footer_copy{
         margin-left: 20px;
     }
-    header .container{
-        display: flex;
-        flex-direction: row;
-    }
     
-    header{
-        height:auto
-    }
-    .logo{
-        padding-left: 20px;
-    }
-    nav ul{
-        flex-direction: column;
-        display: none;
-        position: absolute;
-        left: 0;
-        background: #ffffff;
-        width: 100%;
-        margin-top: 50px;
-
-    }
-    .menuMobile{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
 }
