@@ -343,7 +343,7 @@ footer .footer_area1{
 }
 
 
-footer .flex{
+footer .column{
     display: flex;
     flex-direction: column;
 }
@@ -430,22 +430,22 @@ span{
     margin-right: 20px;
 }
 .menuMobile div{
-    height: 3px;
+    height: 7px;
     background-color: #0079c7;
     
 }
 
 @media(max-width:450px){
-  
+
     header .container{
         display: flex;
         flex-direction: row;
     }
     
-    
     .logo{
         padding-left: 20px;
     }
+    
     nav ul{
         flex-direction: column;
         display: none;
@@ -453,13 +453,13 @@ span{
         left: 200px;
         background: rgba(0,0,0, 0.8);
         width: 100%;
-        margin-top: 50px;
+        margin-top: -60px;
 
     }
     .menuMobile{
         display: flex;
         flex-direction: column;
-        margin-right: 30px;
+        margin-right: 160px;
         justify-content: space-around;
     }
 
@@ -478,32 +478,72 @@ span{
         height: auto;
         flex-direction: column;
     }
+    .op1,
+    .op2,
+    .op3{
+        width: 315px;
+    }
     .container{
-        flex-direction: column;
-
+        flex-direction: column;    
     }
-
-     #geral section{
-        padding: 20px;
+    .widget_area{
+        margin-left: 75px;
     }
-    #geral aside{
-        padding: 50px;
-    }
-    .aside{
+    .widget_area_bar{
         display: flex;
-        width: 300px;
-        flex-wrap: wrap;
-        margin-left: 20px;
-        background-color: white;
+        align-items: center;
+        bottom: 50px;
     }
-
+    .news_area{
+        margin-left:90px;
+        margin-bottom: 20px;
+    }
+    .news_comments{
+        width: 43px;
+    }
+ 
+    article .news_thumbnail{
+    width: 240px;
+    height:240px;
+    margin-left: 40px;
+    }
+    article .news_title{
+        width: 280px;
+        text-align: center;
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+    article .news_resume{
+        width: 290px;
+        margin: 10px;
+        padding: 10px;
+        text-align: left;
+        font-size: 14px;
+        
+    }
+    aside .aside{
+        display: flex;
+        width: 420px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+    }
     .footer_area1,
     .footer_area2{
         flex-direction: column;
-        padding: 20px;
+    }
+    .f4,
+    .f5,
+    .f6{
+        width: 310px;
+        padding: 30px;
     }
     .footer_copy{
-        margin-left: 20px;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .footer_copy span{
+        margin: 5px;
+        font-size: 12px;
     }
     
 }
