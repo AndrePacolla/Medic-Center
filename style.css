@@ -10,8 +10,7 @@
 header{
     display: flex;
     justify-content: center;
-    height: 120px;
-
+    height: 115px;
 }
 
 .container {
@@ -39,7 +38,7 @@ nav a{
     padding: 15px;
     margin: 5px;
     text-decoration: none;/*remove sublinhado*/
-    color: #727272;
+    color: #2b2a2a;
     text-transform: uppercase;
     font-size: 1.0rem;
     font-weight: bold;
@@ -95,8 +94,9 @@ a:hover{
     margin-top: 30px;
 }
 .banner_options{
-    height: 210px;
     display: flex;
+    height: 210px;
+
 }
 
 .op1,
@@ -105,7 +105,6 @@ a:hover{
     flex: 1;
     padding: 10px;
     color: white;
-
 }
 
 .op1{
@@ -119,29 +118,32 @@ a:hover{
 }
 
 .banner_title{
-    font-size: 21px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .banner_desc{
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 10px;
     margin-bottom: 20px;
+    padding: 10px;
 
 }
 
 .banner_options a {
+    font-weight: bold;
     text-decoration: none;
-    border: 1px solid white;
-    color: white;
-    padding: 5px;
-    font-size: 13px;
+    color: rgb(183, 231, 127);
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 3px solid #4be703;
 
 }
 
 .list_hrs{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #cccc;
+    border-bottom: 3px solid #4be703;
     font-size: 14px;
     font-weight: bold;
     padding: 10px;
@@ -249,6 +251,9 @@ article{
 }
 
 /*Area do Aside*/
+aside{
+    margin-top: 45px;
+}
 
 .bl1,
 .bl2,
@@ -283,7 +288,7 @@ article{
     object-fit: cover;
 }
 .aside{
-    background-color: #e2e2e2;
+    background-color: #ffff;
 }
 .bl5 div,
 .bl6 div {
@@ -404,9 +409,16 @@ footer .e{
 .footer_widget_area_text{
     color: rgb(193, 219, 252);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 } 
 
+.f4_title{
+    margin-top: -30px;
+    margin-bottom: 19px;
+}
+.f4_bar{
+    margin-top:-10px;
+}
 
 .footer_copy{
     border-top: 2px solid #707070;
@@ -435,7 +447,7 @@ span{
     
 }
 
-@media(max-width:450px){
+@media(max-width:600px){
 
     header .container{
         display: flex;
@@ -459,7 +471,7 @@ span{
     .menuMobile{
         display: flex;
         flex-direction: column;
-        margin-right: 160px;
+        margin-right: 70px;
         justify-content: space-around;
     }
 
@@ -472,12 +484,18 @@ span{
     }
     .banner_headline h2{
         font-size: 14px;
-
     }
     .banner_options{
         height: auto;
         flex-direction: column;
     }
+    .banner_title{
+        font-size: 17px;
+    }
+    .banner_desc{
+        font-size: 12px;
+    }
+  
     .op1,
     .op2,
     .op3{
@@ -527,23 +545,32 @@ span{
         margin-right: 40px;
         flex-wrap: wrap;
     }
+    .footer_widget_area_text{
+        font-size: 14px;
+
+    }
     .footer_area1,
     .footer_area2{
         flex-direction: column;
     }
+   
+    .f1,
+    .f2,
+    .f3,
     .f4,
     .f5,
     .f6{
-        width: 310px;
+        width: 330px;
+        margin-left: 10px;
         padding: 30px;
     }
     .footer_copy{
         font-size: 10px;
-        margin-left: 10px;
+        text-align: center;
     }
     .footer_copy span{
-        margin: 5px;
-        font-size: 12px;
+        margin-left: 10px;
+        font-size: 10px;
     }
     
 }
